@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0Pv5E19Ws4QCZHSUMU7FvOzI21HnG/hpDA22ECZHWrE=",
+  "Source": "ForecastWebApi2",
+  "BasePath": "_content/ForecastWebApi2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

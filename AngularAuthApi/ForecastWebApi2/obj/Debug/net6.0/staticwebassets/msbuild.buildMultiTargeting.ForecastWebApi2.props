@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ForecastWebApi2.props" />
+</Project>

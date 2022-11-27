@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularAuthApi", "AngularAuthApi\AngularAuthApi.csproj", "{62C46DD0-1112-4195-B38E-13EF2833B9D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecastApi", "WeatherForecastApi\WeatherForecastApi.csproj", "{0E44FD63-B08D-430C-A6F6-0E18042B63A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForecastWebApi2", "ForecastWebApi2\ForecastWebApi2.csproj", "{004F1DF1-46C8-462A-B417-6C2735EBD575}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{62C46DD0-1112-4195-B38E-13EF2833B9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62C46DD0-1112-4195-B38E-13EF2833B9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62C46DD0-1112-4195-B38E-13EF2833B9D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E44FD63-B08D-430C-A6F6-0E18042B63A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E44FD63-B08D-430C-A6F6-0E18042B63A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E44FD63-B08D-430C-A6F6-0E18042B63A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E44FD63-B08D-430C-A6F6-0E18042B63A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004F1DF1-46C8-462A-B417-6C2735EBD575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004F1DF1-46C8-462A-B417-6C2735EBD575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004F1DF1-46C8-462A-B417-6C2735EBD575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004F1DF1-46C8-462A-B417-6C2735EBD575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
