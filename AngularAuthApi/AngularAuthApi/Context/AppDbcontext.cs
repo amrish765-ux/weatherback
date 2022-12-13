@@ -10,9 +10,13 @@ namespace AngularAuthApi.Context
 
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Favourite> Favorites { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<User>().ToTable("users");
+            modelBuilder.Entity<Favourite>().ToTable("favourites");
+
         }
     }
 }

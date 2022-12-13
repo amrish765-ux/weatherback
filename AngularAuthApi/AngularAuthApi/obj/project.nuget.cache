@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Fjduc3UsYoSu1w28Tkj3a0Wmw9SCPsrAa4cWk/yAEe2ExQkZPshoojNVVQw1rcvXqoqgXnE18UmAP9+n9Pfx7g==",
+  "dgSpecHash": "PIYjzpIcx2UJVrbBkGiHRU2+8JYpcSWBDvEwK/MjNAb8l2D4G95ZFVtyheNGdfIc1lwBC7G3T2egTqVwDBjlYg==",
   "success": true,
   "projectFilePath": "D:\\practice_angular\\angular_auth\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\Computer\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

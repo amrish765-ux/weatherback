@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AngularAuthApi.Models
@@ -31,6 +32,8 @@ namespace AngularAuthApi.Models
 
         //[Required(ErrorMessage = "Password is Required")]
         public string Password { get; set; }
+
+        public Favourite favourite { get; set; }
 
     }
 }

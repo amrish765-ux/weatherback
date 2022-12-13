@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/User/authenticate",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7253
+        }
+      ],
+      "UpstreamPathTemplate": "/weathergate/api/User/authenticate",
+      "UpstreamHttpMethod": ["Post"]
+    }
+  ],
+  "GlobalConfiguration": {}
+}

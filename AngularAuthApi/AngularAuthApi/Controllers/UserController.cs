@@ -32,7 +32,7 @@ namespace AngularAuthApi.Controllers
                 {
                     Message = "User not Found"
                 });
-            if(!PasswordHasher.VerifyPassword(userObj.Password,user.Password))
+            if (!PasswordHasher.VerifyPassword(userObj.Password, user.Password))
             {
                 return BadRequest(new
                 {
@@ -43,7 +43,7 @@ namespace AngularAuthApi.Controllers
             user.Token = CreateJWT(user);
             return Ok(new
             {
-                Token=user.Token,
+                Token = user.Token,
                 Message = "Login Success"
             });
         }
@@ -84,7 +84,7 @@ namespace AngularAuthApi.Controllers
             });
         }
         private Task<bool> CheckUserNameExistsAsync(string username)
-            =>_appDbcontext.Users.AnyAsync(x=>x.Username==username);
+            => _appDbcontext.Users.AnyAsync(x => x.Username == username);
         private Task<bool> CheckEmailExistsAsync(string email)
             => _appDbcontext.Users.AnyAsync(x => x.Email == email);
 
@@ -95,12 +95,12 @@ namespace AngularAuthApi.Controllers
                 sb.Append("minimum length should be 8" + Environment.NewLine);
             if ((!Regex.IsMatch(password, "[a-z]") && !Regex.IsMatch(password, "[A-z]") && !Regex.IsMatch(password, "[0-9]")))
                 sb.Append("password should be alpha numeric" + Environment.NewLine);
-            if(!Regex.IsMatch(password,"[<,>,0,!,,@,#,$,%,*,&,+,(,),_,^,\\[,\\],\\,:,;,',`,~,/,?.\",=]"))
+            if (!Regex.IsMatch(password, "[<,>,0,!,,@,#,$,%,*,&,+,(,),_,^,\\[,\\],\\,:,;,',`,~,/,?.\",=]"))
                 sb.Append("Password should contains special characters" + Environment.NewLine);
             return sb.ToString();
         }
 
-        private string CreateJWT(User user) 
+        private string CreateJWT(User user)
         {
             var jwtTokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes("veryverysecretKey....");
@@ -125,6 +125,33 @@ namespace AngularAuthApi.Controllers
         {
             return Ok(
                 await _appDbcontext.Users.ToListAsync());
+        }
+        //[HttpPut("updatePassword")]
+        //public async Task<IActionResult> UpdatePassword([FromBody] User userObj, [FromBody] UpdatePassword update)
+        //{
+        //    if (userObj == null)
+        //        return BadRequest();
+        //    var user = await _appDbcontext.Users.FirstOrDefaultAsync(x => x.Username == userObj.Username && x.Password ==update.CurrentPassword);
+        //    if (user == null)
+        //        return NotFound(new
+        //        {
+        //            Message = "User not Found"
+        //        });
+        //    return Ok();
+        //}
+        [HttpPost("UpdateUser")]
+
+        public IActionResult Update(update user)
+        {
+            var Uname = _appDbcontext.Users.Where(u => u.Email == user.email).FirstOrDefault();
+            if (_appDbcontext.Users.Where(u => u.Email == user.email).FirstOrDefault() != null)
+            {
+                Uname.Password = PasswordHasher.HashPassword(user.newpassword);
+                _appDbcontext.SaveChanges();
+                return Ok("updated successfully");
+            }
+            return Ok("Failure");
+
         }
     }
 }

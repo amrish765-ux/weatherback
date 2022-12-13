@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "E73eNAVMHKcjrqIpyspJ4RQ2uAAR0/GxAS5i0VI0NKU=",
+  "Source": "RecommendApi",
+  "BasePath": "_content/RecommendApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

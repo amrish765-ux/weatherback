@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  angularauthapi:
+    image: ${DOCKER_REGISTRY-}angularauthapi
+    build:
+      context: .
+      dockerfile: AngularAuthApi\Dockerfile

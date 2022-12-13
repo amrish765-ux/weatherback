@@ -31,10 +31,14 @@ namespace AngularAuthApi.Helpers
             for (var i = 0; i < HashSize; i++)
             {
                 if (hashBytes[i + SaltSize] != hash[i])
+                {
+                    //Console.WriteLine(hash[i]);
                     return false;
-
+                }                   
             }
             return true;
         }
+
+
     }
 }

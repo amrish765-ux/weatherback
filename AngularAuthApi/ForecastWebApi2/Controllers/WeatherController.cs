@@ -28,13 +28,9 @@ namespace ForecastWebApi2.Controllers
 
             using (WebClient client = new WebClient())
             {
-                string json = client.DownloadString(url);
+                string json = client.DownloadString(url);               
 
-                
-
-                
                 RootObject root = (new JavaScriptSerializer()).Deserialize<RootObject>(json);
-
                 
                 lists.Add(new ResultViewModel { Country = root.sys.country, City = root.name, Lat = Convert.ToString(root.coord.lat), Lon = Convert.ToString(root.coord.lon), Description = root.weather[0].description, Humidity = Convert.ToString(root.main.humidity), Temp = Convert.ToString(root.main.temp), TempFeelsLike = Convert.ToString(root.main.feels_like), TempMax = Convert.ToString(root.main.temp_max), TempMin = Convert.ToString(root.main.temp_min), WeatherIcon = root.weather[0].icon });
              

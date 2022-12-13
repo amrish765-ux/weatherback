@@ -44,6 +44,7 @@ namespace ForecastWebApi2
             app.UseMiddleware<CorsMiddleware>();
             app.UseCors("MyPolicy");
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.MapControllers();
 
